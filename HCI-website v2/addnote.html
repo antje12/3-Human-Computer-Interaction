@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HCI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- searchbar -->
+        <div class="search">
+            <input placeholder="Search">
+            <i class="fa fa-search fa-flip-horizontal"></i>
+        </div>
+
+        <div class="sidenav">
+            <a class="navlink" href="#">Human Computer interaction</a>
+            <a class="navlink" href="#">Calculus og lineær algebra</a>
+            <a class="navlink" href="#">Distribution and Intergration</a>
+            <a class="navlink" href="#">Semester-projekt 2020</a>
+
+            <div class="navfooter">
+                <button class="add-nav" id="sideNavAdd">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <a class="navlink" href="#">01 - Introduction</a>
+            <a class="navlink" href="#">02 - Differentiering</a>
+            <a class="navlink" href="#">03 - Geometri</a>
+            <a class="navlink" href="#">04 - Sin, Cost & Tan</a>
+
+            <div class="navfooter">
+                <button class="add-nav" id="subNavAdd">
+                    +
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <H1>
+                03 - Geometri
+            </H1>
+            <span>
+                09/11/20
+            </span>
+        </div>
+
+        <div class="posts">
+            
+            <div id="popUp">
+      
+                <div id="tagBox" class="maintext">
+                    <div id="tagBoxBox">Tags</div>
+                  <input type="text" id="tagField">
+                </div>
+                <div id="noteBox" class="maintext">
+                  <div id="textButtons"> 
+                    <button type="button" style="text-decoration: underline; margin-left: 5px;" class="buttons">U</button>
+                    <button type="button" style="font-style: italic;" class="buttons">I</button>
+                    <button type="button" style="font-weight: bold;" class="buttons">B</button> 
+                    <button type="button" style="text-decoration: overline;" class="buttons">O</button>
+                    <button type="button" class="buttons">L</button>
+                    <button type="button" class="buttons">P</button> 
+                    <button type="button" class="buttons">D</button>
+                    <button type="button" class="buttons">F</button>
+                    <button type="button" class="buttons">T</button>
+                    <button type="button" class="buttons">Å</button>
+                    <button type="button" class="buttons">E</button>
+                    <button type="button" class="buttons">Æ</button>
+                    <button type="button" class="buttons">Ø</button>
+                    <button type="button" class="buttons">Å</button>
+                    <button type="button" class="buttons">Ü</button>
+                  </div>
+                  <textarea id="noteField" rows="7" cols="20">         </textarea><br>
+                </div>
+                <div id="uploadBox" class="maintext">
+                    <img src="images/download-2-xxl.png" id="uploadImage" alt="upload">
+            
+                    DRAG AND DROP 
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <a href="/postfeed.html">
+        <button id="addNote">UPLOAD</button>
+    </a>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+
+input[type=text] {
+  margin: 6px;
+  border: 2px solid #7887AB;
+  background-color: #7887AB;
+}
+
+input, select, textarea{
+  color: white;
+  border:none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E0E5F4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height:100%;
+  min-height: 100%;
+  width: 400px;
+  overflow-y: hidden;
+  display: block;
+  float: left;
+}
+
+#navSearchbar {
+  height: 20px;
+  width: 75%;
+  margin: 10px auto;
+  display:block;
+  border-radius: 20px;
+  outline: none;
+}
+
+.sidenav {
+  height: 100%;  /*Full-height: remove this if you want "auto" height */
+  width: 50%; /* Set the width of the sidebar */
+  display: block;
+  background-color: #4F628E;
+  color:white;
+  float:left;
+  overflow-y: hidden;
+
+}
+
+.subnav {
+  height: 100%; /*Full-height: remove this if you want "auto" height */
+  width: 50%; /* Set the width of the sidebar */
+  display: block;
+  background-color: #7887AB;
+  color:white;
+  float:left;
+  overflow-y: hidden;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-size: 19px;
+  background-color: #4F628E;
+  border-bottom: 2px solid;
+  border-bottom-color: #7887AB;
+}
+
+.sidenav a:hover {
+  background-color: #7887AB;
+}
+
+.subnav a {
+  font-size: 18px;
+  background-color: #7887AB;
+  border-bottom: 2px solid;
+  border-bottom-color: #4F628E;
+}
+
+.subnav a:hover {
+  background-color: #4F628E;
+}
+
+.navlink {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  
+  background-color: #4F628E;
+  border-bottom: 2px solid;
+  border-bottom-color: #7887AB;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.add-nav{
+  border-radius: 10px;
+  border: none;
+  width:120px;
+  margin: 0 auto;
+  margin-top:10px;
+  font-size:18px;
+}
+
+#sideNavAdd{
+  background-color:#7887AB;
+  color:#4F628E;
+  outline: none;
+  cursor: pointer;
+}
+
+#subNavAdd{
+  background-color: #4F628E;
+  color:#7887AB;
+  outline: none;
+  cursor: pointer;
+}
+
+#addNote {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7887AB;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.content {
+  display: block;
+  float:left;
+  text-align: center;
+  width: calc(100% - 400px);
+  height:100%;
+  min-height: 100%;
+}
+
+.header {
+  text-align: left;
+  width: calc(100% - 120px);
+  padding: 10px;
+  margin: 50px;
+  font-size: 20px;
+}
+
+H1 {
+  border-bottom: 1px solid;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+}
+
+.post {
+  text-align: left;
+   width: 70%;
+    padding: 10px;
+    margin: auto;
+    font-size: 20px;
+    background-color: #99A5C2;
+    margin-bottom: 50px;
+}
+
+.postImg{
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin: 10px auto;
+  border: 2px solid #4F628E;
+}
+
+.avatar {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+}
+
+.avatarName{
+display:inline-block;
+}
+
+.avatarImg{
+ margin: auto;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}
+
+.navfooter {
+  text-align: center;
+}
+
+.search {
+  position: relative;
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  background-color: #374972;
+  text-align: center;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+  text-indent: 32px;
+  background:#4F628E;
+  border: 1px solid #4F628E;
+  border-radius: 20px;
+  margin: 7px;
+}
+
+.search .fa-search { 
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.search .fa-search {left: 295px; top: 16px;}  
+
+::placeholder { 
+  color: white;
+  text-align: left;
+  opacity: 0.50;
+  font-size: 17.5px; 
+}
+
+.metadata {
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.vl {
+  border-left: 2px solid  #374972;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+    display: block;
+}
+
+.userimage {
+  float: left;
+    display: block;
+}
+
+.userinfo {
+  float: left;
+    display: block;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.dark {
+  color: #4F628E;
+}
+
+.userimage {
+  background-color: #4F628E;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.userimage i {
+  color: #99A5C2;
+}
+
+.tags {
+  font-size: 20px;
+  color: white;
+}
+
+.interact {
+  float: right;
+    display: block;
+}
+
+.interact i {
+  color: #4F628E;
+}
+
+#popUp {
+  background-color: #A8BAE6;
+  width: 300px;
+  border: 0px solid #A8BAE6;
+  padding: 4% 3.5%;
+  height: 256px;
+  margin: auto;  
+}
+
+#tagField {
+  width: 85%;
+  background-color: #7887AB;
+  border: solid #7887AB;
+  float: right;
+  margin: 0px;
+}
+
+.buttons {
+    font-size: 8px;
+    border: 0px solid;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#tagBox {
+  width: 100%;
+  border: 0px;
+  float: left;
+  background-color: #4F628E;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+#tagBoxBox {
+    float: left;
+    padding: 4px 0px 2px 6px;
+}
+
+#mainText {
+  width: 100%;
+  background-color: #4F628E;
+  border: solid #4F628E;
+}
+
+#noteBox {
+  width: 100%;
+  height: 130px;
+  float: left;
+  background-color: #ebf1ff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+
+}
+
+#noteField {
+  width:  97.1%;
+  background-color: #7887AB;
+  border: solid #7887AB;
+  float: left;
+  resize: none;
+}
+
+#uploadBox {
+  width: 100%;
+  border: 0px;
+  float: left;
+  background-color: #7887AB;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+
+#uploadImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 30px;
+    padding-bottom: 10px;
+}
+
+.fas .fa-upload{
+  color: white;
+}
+
+.maintext {
+  color: white;
+}
+
+.login{
+  margin: auto;
+}
+
+#logo {
+  width: 15%;
+  margin-top: 12%;
+}
+
+#loginButton {
+  padding: 5px 17px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #7887AB;
+  border: solid 1px black;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+#loginInput {
+  color: #4F628E;
+  padding: 6px 3px;
+  background-color: #99A5C2;
+  border-radius: 3px;
+  border: solid 1px black;
+  margin-bottom: 7px;
+}

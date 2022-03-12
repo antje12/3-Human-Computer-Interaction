@@ -1,0 +1,14 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://hci09.000webhostapp.com/</loc>
+        <lastmod>2020-11-25T07:23:51+00:00</lastmod>
+        <priority>1.00</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://hci09.000webhostapp.com/postfeed.html</loc>
+        <lastmod>2020-11-25T07:23:51+00:00</lastmod>
+        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+    </url>
+</urlset>
